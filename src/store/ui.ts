@@ -52,7 +52,7 @@ interface UiState {
 
 function createDefaultUi(): Ui {
   return {
-    locale: 'en',
+    locale: 'ja',
     devmode: false,
     uploadedSaves: 1,
     sidebar: {
@@ -139,7 +139,7 @@ export const useUi = create<UiState>()(
           nextState = {
             ui: {
               devmode: devmode ?? false,
-              locale: 'en',
+              locale: 'ja',
               uploadedSaves: totalUploaded ?? 1,
               sidebar: {
                 open: false,
@@ -197,7 +197,7 @@ export const useUi = create<UiState>()(
         if (version < 5) {
           const current = nextState as { ui: Partial<Ui> };
           if (current.ui) {
-            current.ui.locale ??= 'en';
+            current.ui.locale ??= 'ja';
           }
         }
 
