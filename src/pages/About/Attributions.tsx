@@ -144,6 +144,16 @@ export function AboutAttributions() {
                 dafont.com/pixel-operator
               </Link>
             </li>
+            <li className="text-text-2">
+              {t(
+                'ui.about.shinonomeLicensePrefix',
+                'JF Dot Shinonome Gothic 14 (Japanese pixel font) — License: Public Domain',
+              )}
+              . {t('ui.about.sourcePrefix', 'Source:')}{' '}
+              <Link href="http://jikasei.me/font/jf-dotfont/">
+                jikasei.me/font/jf-dotfont
+              </Link>
+            </li>
           </ul>
         </Card>
       </Section>

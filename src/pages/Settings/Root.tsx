@@ -15,6 +15,7 @@ import { useRef } from 'react';
 import FlagKr from '@assets/flags/flag-kr.png';
 import FlagUs from '@assets/flags/flag-us.png';
 import FlagIt from '@assets/flags/flag-it.png';
+import FlagJp from '@assets/flags/flag-jp.png';
 import {
   SUPPORTED_LOCALES,
   getLocaleTranslationStats,
@@ -35,6 +36,7 @@ const FLAG_ASSETS = {
   us: FlagUs,
   kr: FlagKr,
   it: FlagIt,
+  jp: FlagJp,
 };
 
 function LocaleFlag({ country }: { country: keyof typeof FLAG_ASSETS }) {

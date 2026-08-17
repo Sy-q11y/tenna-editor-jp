@@ -31,6 +31,7 @@ import {
 import { FLAG_BITFIELDS, FLAG_BITFIELDS_META } from '@data/flag-bitfields';
 import ko from './locales/ko.json';
 import it from './locales/it.json';
+import ja from './locales/ja.json';
 
 export const SUPPORTED_LOCALES = {
   en: {
@@ -45,6 +46,10 @@ export const SUPPORTED_LOCALES = {
     displayName: 'Italian',
     flag: 'it',
   },
+  ja: {
+    displayName: 'Japanese',
+    flag: 'jp',
+  },
 } as const;
 
 export type Locale = UiLocale;
@@ -55,6 +60,7 @@ type TranslationValues = Record<string, string | number>;
 const TRANSLATIONS: Record<Exclude<Locale, 'en'>, TranslationDictionary> = {
   ko,
   it,
+  ja,
 };
 
 const FLAG_NAMES_BY_ID = Object.fromEntries(
@@ -485,6 +491,8 @@ const UI_FALLBACKS: TranslationDictionary = {
     'Pixel Operator and Pixel Operator Mono — License: SIL Open Font License 1.1 ({license}). Source: {source}',
   'ui.about.pixelOperatorLicensePrefix':
     'Pixel Operator and Pixel Operator Mono — License: SIL Open Font License 1.1',
+  'ui.about.shinonomeLicensePrefix':
+    'JF Dot Shinonome Gothic 14 (Japanese pixel font) — License: Public Domain',
   'ui.about.sourcePrefix': 'Source:',
   'ui.about.pixelarticonsAttribution':
     'Pixelarticons by Gerrit Halfmann — License: {license}. Website: {website}',

@@ -135,6 +135,11 @@
   --font-mono: 'Pixel Operator Mono', 'Galmuri Mono 11', monospace;
 }
 
+:root[data-locale='ja'] {
+  --font-sans: 'Pixel Operator', 'JF Dot Shinonome Gothic 14', sans-serif;
+  --font-mono: 'Pixel Operator Mono', 'JF Dot Shinonome Gothic 14', monospace;
+}
+
 @font-face {
   font-family: 'Pixel Operator';
   src: url('/fonts/PixelOperator.woff2') format('woff2');
@@ -187,6 +192,22 @@
   font-family: 'Galmuri Mono 11';
   src: url('/fonts/ko/GalmuriMono11.woff2') format('woff2');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JF Dot Shinonome Gothic 14';
+  src: url('/fonts/ja/JF-Dot-Shinonome14.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JF Dot Shinonome Gothic 14';
+  src: url('/fonts/ja/JF-Dot-Shinonome14B.woff2') format('woff2');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }

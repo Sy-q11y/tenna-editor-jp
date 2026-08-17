@@ -6,7 +6,7 @@ import { createDebouncedJSONStorage } from 'zustand-debounce';
 
 export const UI_VERSION = 9;
 
-export type UiLocale = 'en' | 'ko' | 'it';
+export type UiLocale = 'en' | 'ko' | 'it' | 'ja';
 
 export interface Ui {
   locale: UiLocale;
