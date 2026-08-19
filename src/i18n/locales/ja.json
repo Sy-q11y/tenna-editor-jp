@@ -6771,7 +6771,7 @@
   "ui.field.currentRoom": "現在の部屋",
   "ui.field.inDarkWorld": "現在　闇の世界にいる",
   "ui.field.inGameSlot": "ゲーム内スロット",
-  "ui.field.lightWorldMoney": "光の世界のおかね",
+  "ui.field.lightWorldMoney": "光の世界のおかね（$）",
   "ui.field.money": "おかね（D$）",
   "ui.field.name": "名前",
   "ui.field.playerName": "プレイヤー名",
