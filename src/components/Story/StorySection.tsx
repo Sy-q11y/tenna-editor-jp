@@ -1,5 +1,6 @@
 import { Card, Heading, Section } from '@components';
 import { mergeClass } from '@utils';
+import { useTranslation } from '../../i18n';
 import type { ReactNode } from 'react';
 
 interface StorySectionProps {
@@ -15,11 +16,13 @@ export function StorySection({
   className,
   children,
 }: StorySectionProps) {
+  const { t } = useTranslation();
+
   return (
     <Section id={id} className={mergeClass('flex-1 flex', className)}>
       <Card className="flex-1 flex flex-col gap-4 p-6">
         <Heading level={3} className="border-b border-border/40 pb-3">
-          {title}
+          {t(`storySections.${id}.title`, title)}
         </Heading>
         {children}
       </Card>
