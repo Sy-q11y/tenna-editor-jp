@@ -11,7 +11,13 @@ import {
 import { mergeClass } from '@utils';
 import DividerIcon from '@assets/icons/minus.svg?react';
 import KrisIcon from '@assets/deltarune/characters/kris.svg?react';
-import { useTranslation } from '../../i18n';
+import {
+  getCharacterTranslationKeyPrefix,
+  translateMeta,
+  useTranslation,
+} from '../../i18n';
+import { CHARACTERS } from '@data';
+import { characterHelpers } from '@utils/data-helpers';
 
 const THEME = {
   bg: 'bg-[#a6ab2f]',
@@ -21,6 +27,11 @@ const THEME = {
 
 export function LightWorldRoot() {
   const { t } = useTranslation();
+  const krisName = translateMeta(
+    getCharacterTranslationKeyPrefix(CHARACTERS.KRIS),
+    characterHelpers.getById(CHARACTERS.KRIS),
+    t,
+  ).displayName;
 
   return (
     <Page>
@@ -51,7 +62,7 @@ export function LightWorldRoot() {
                       level={2}
                       className={mergeClass('uppercase', THEME.text)}
                     >
-                      Kris
+                      {krisName}
                     </Heading>
                   </Section>
                   <div className="flex flex-col gap-12 px-6 py-6">
